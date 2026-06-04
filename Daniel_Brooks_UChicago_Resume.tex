@@ -122,8 +122,8 @@
 %----------HEADING----------
 \begin{center}
     \textbf{\Huge Daniel Brooks} \\ \vspace{5pt}
-    \small \faEnvelope \hspace{2pt} \texttt{danielbusnz@gmail.com} \hspace{1pt} $|$
-    \hspace{1pt} \faGithub \hspace{2pt} \texttt{github.com/danielbusnz-lgtm}
+    \small \faEnvelope \hspace{2pt} \href{mailto:danielbusnz@gmail.com}{\texttt{danielbusnz@gmail.com}} \hspace{1pt} $|$
+    \hspace{1pt} \faGithub \hspace{2pt} \href{https://github.com/danielbusnz-lgtm}{\texttt{github.com/danielbusnz-lgtm}}
     \\ \vspace{-3pt}
 \end{center}
 
@@ -135,9 +135,9 @@
       {Cape Property Pros}{June 2025 -- Present}
       {Software Engineer}{Dennis, MA}
       \resumeItemListStart
-        \resumeItem{Built data processing pipelines in Python integrating Gmail API, QuickBooks Online API, and PostgreSQL with async batch processing across \textbf{500+ records monthly}}
-        \resumeItem{Designed ETL workflows with Pydantic schema validation, ensuring data quality, accuracy, and reproducibility across 3 disparate data sources}
-        \resumeItem{Implemented fuzzy string matching with RapidFuzz achieving \textbf{90\%+ accuracy} and hash-based deduplication for reliable data preprocessing}
+        \resumeItem{Built an AI invoice-processing pipeline in Python: GPT-based extraction of structured fields from incoming invoices, validated against a Pydantic schema and synced into QuickBooks Online, replacing manual data entry}
+        \resumeItem{Integrated the Gmail and QuickBooks Online APIs with a PostgreSQL store through async batch ETL across multiple data sources}
+        \resumeItem{Reconciled records with RapidFuzz fuzzy matching and hash-based deduplication to keep synced data clean}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
@@ -147,24 +147,24 @@
     \resumeSubHeadingListStart
 
       \resumeProjectHeading
-          {\textbf{RAG Conversational Agent} $|$ \small{Python, LangChain, ChromaDB, FastAPI} $|$ \href{https://github.com/danielbusnz-lgtm/rag-qa-app}{\myuline{GitHub}}}{}
+          {\textbf{routelet} $|$ \small{Python, SetFit, ONNX, scikit-learn, DVC} $|$ \href{https://github.com/danielbusnz-lgtm/routelet}{\myuline{GitHub}}}{}
           \resumeItemListStart
-            \resumeItem{Built RAG pipeline with vector database retrieval, OpenAI embeddings, and conversation orchestration logic for multi-turn context handling}
-            \resumeItem{Implemented real-time streaming via FastAPI SSE with LangChain orchestration, delivering responses with \textbf{sub-200ms latency} and source citations}
+            \resumeItem{Fine-tuned a small intent classifier (SetFit + calibrated head) that matches a Claude LLM baseline within \textbf{1\%} (92\% vs 93.5\%) while running on-device, replacing a \textbf{$\sim$1s-per-call} API with millisecond inference}
+            \resumeItem{Built the eval harness and data pipeline behind it: frozen-holdout benchmarking against the LLM, confidence-gated out-of-distribution handling, DVC-versioned data, and int8 ONNX export}
           \resumeItemListEnd
 
       \resumeProjectHeading
-          {\textbf{InkVault} $|$ \small{Python, FastAPI, scikit-learn, AWS, Claude API} $|$ \href{https://github.com/danielbusnz-lgtm/inkvault}{\myuline{GitHub}}}{}
+          {\textbf{Aegis} $|$ \small{Rust, ONNX Runtime, PipeWire, Claude API} $|$ \href{https://github.com/danielbusnz-lgtm/aegis}{\myuline{GitHub}}}{}
           \resumeItemListStart
-            \resumeItem{Designed LLM-powered document extraction pipeline with prompt engineering, JSON schema validation, and structured output parsing via Claude API}
-            \resumeItem{Deployed on AWS Lambda with S3 and DynamoDB; built ML classifier (TF-IDF + LogisticRegression) achieving \textbf{94\% accuracy} with MLflow tracking}
+            \resumeItem{Built a cross-platform voice-controlled AI desktop assistant in Rust: hold-to-talk capture, speech-to-intent routing across \textbf{five command paths}, and on-screen action execution}
+            \resumeItem{Cut per-command latency and cost by routing through an on-device ONNX classifier that calls a cloud LLM only below a confidence threshold; backed by an eval harness (pass rate + confusion matrix), \textbf{98 tests}, and code-coverage CI}
           \resumeItemListEnd
 
       \resumeProjectHeading
-          {\textbf{Real-Time Trading System} $|$ \small{Python, Rust, asyncio, WebSockets} $|$ \href{https://github.com/danielbusnz-lgtm/polymarket-bot}{\myuline{GitHub}}}{}
+          {\textbf{HiveNet} $|$ \small{TypeScript, Next.js, FastAPI, Postgres, WebSockets} $|$ \href{https://github.com/danielbusnz-lgtm/HiveNet}{\myuline{GitHub}}}{}
           \resumeItemListStart
-            \resumeItem{Built real-time streaming system with Python asyncio backend processing live data across \textbf{50+ concurrent connections}}
-            \resumeItem{Designed dual-language architecture: Python for API integration and data processing, Rust TUI for real-time dashboards at 60fps}
+            \resumeItem{Built and shipped a full-stack social network (Next.js, FastAPI, Postgres): JWT auth, a posts/comments/follows social graph, and a \textbf{live-updating WebSocket feed}, deployed with a public demo}
+            \resumeItem{Designed the backend as a typed REST API over SQLAlchemy with a WebSocket channel for real-time updates; containerized with Docker Compose and gated by CI on both tiers}
           \resumeItemListEnd
 
     \resumeSubHeadingListEnd
@@ -194,9 +194,9 @@
 \section{SKILLS}
  \begin{itemize}[leftmargin=0in, label={}]
     \small{\item{
-     \textbf{Languages}{: Python, SQL, Rust, Bash, TypeScript}\vspace{2pt} \\
-     \textbf{LLM/NLP}{: LangChain, RAG pipelines, prompt engineering, OpenAI API, Claude API, vector databases, ChromaDB, embeddings}\vspace{2pt} \\
-     \textbf{ML/Data}{: scikit-learn, Pandas, NumPy, MLflow, data preprocessing, ETL pipelines}\vspace{2pt} \\
+     \textbf{Languages}{: Python, Rust, TypeScript, Go, SQL, Bash}\vspace{2pt} \\
+     \textbf{LLM/NLP}{: fine-tuning (SetFit), model distillation, eval harnesses, prompt engineering, Claude API, OpenAI API, embeddings, ONNX inference}\vspace{2pt} \\
+     \textbf{ML/Data}{: scikit-learn, sentence-transformers, Pandas, NumPy, DVC, data preprocessing, ETL pipelines}\vspace{2pt} \\
      \textbf{Infrastructure}{: FastAPI, REST APIs, streaming, asyncio, AWS Lambda, S3, PostgreSQL, DynamoDB, Docker}
     }}
  \end{itemize}
