@@ -135,9 +135,9 @@
       {Cape Property Pros}{June 2025 -- Present}
       {Software Engineer}{Dennis, MA}
       \resumeItemListStart
-        \resumeItem{Built an AI invoice-processing pipeline in Python: GPT-based extraction of structured fields from incoming invoices, validated against a Pydantic schema and synced into QuickBooks Online, replacing manual data entry}
-        \resumeItem{Integrated the Gmail and QuickBooks Online APIs with a PostgreSQL store through async batch ETL across multiple data sources}
-        \resumeItem{Reconciled records with RapidFuzz fuzzy matching and hash-based deduplication to keep synced data clean}
+        \resumeItem{Saved $\sim$\textbf{10 hours/week} of manual data entry by deploying a Python GPT-based extraction pipeline that pulls structured fields from incoming invoices at \textbf{95\% accuracy}, validates them against a Pydantic schema, and syncs them into QuickBooks Online}
+        \resumeItem{Unified data from the Gmail and QuickBooks Online APIs into a single PostgreSQL store via async batch ETL, removing siloed manual lookups across sources}
+        \resumeItem{Cut the error rate \textbf{15\%} and removed \textbf{100+ duplicate records} by reconciling synced data with RapidFuzz fuzzy matching and hash-based deduplication}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
@@ -154,14 +154,14 @@
           \resumeItemListEnd
 
       \resumeProjectHeading
-          {\textbf{Aegis} $|$ \small{Rust, ONNX Runtime, PipeWire, Claude API} $|$ \href{https://github.com/danielbusnz-lgtm/aegis}{\myuline{GitHub}}}{}
+          {\textbf{Peeky} $|$ \small{Rust, ONNX Runtime, PipeWire, Claude API} $|$ \href{https://getpeeky.ai}{\myuline{getpeeky.ai}} $|$ \href{https://github.com/danielbusnz-lgtm/peeky}{\myuline{GitHub}}}{}
           \resumeItemListStart
-            \resumeItem{Built a cross-platform voice-controlled AI desktop assistant in Rust: hold-to-talk capture, speech-to-intent routing across \textbf{five command paths}, and on-screen action execution}
+            \resumeItem{Built and shipped a cross-platform voice-controlled AI desktop assistant in Rust, now serving \textbf{10 active users}: hold-to-talk capture, speech-to-intent routing across \textbf{five command paths}, and on-screen action execution}
             \resumeItem{Cut per-command latency and cost by routing through an on-device ONNX classifier that calls a cloud LLM only below a confidence threshold; backed by an eval harness (pass rate + confusion matrix), \textbf{98 tests}, and code-coverage CI}
           \resumeItemListEnd
 
       \resumeProjectHeading
-          {\textbf{HiveNet} $|$ \small{TypeScript, Next.js, FastAPI, Postgres, WebSockets} $|$ \href{https://github.com/danielbusnz-lgtm/HiveNet}{\myuline{GitHub}}}{}
+          {\textbf{HiveNet} $|$ \small{TypeScript, Next.js, FastAPI, Postgres, WebSockets} $|$ \href{https://hivenet.si9num.com}{\myuline{Live Demo}} $|$ \href{https://github.com/danielbusnz-lgtm/HiveNet}{\myuline{GitHub}}}{}
           \resumeItemListStart
             \resumeItem{Built and shipped a full-stack social network (Next.js, FastAPI, Postgres): JWT auth, a posts/comments/follows social graph, and a \textbf{live-updating WebSocket feed}, deployed with a public demo}
             \resumeItem{Designed the backend as a typed REST API over SQLAlchemy with a WebSocket channel for real-time updates; containerized with Docker Compose and gated by CI on both tiers}
@@ -175,7 +175,7 @@
       \resumeProjectHeading
           {\textbf{CutePetsBoston} $|$ Code for Boston}{Dec 2025 -- Present}
           \resumeItemListStart
-            \resumeItem{Migrated REST API integration from v4 to v5 endpoints, implementing data cleaning and preprocessing workflows for \textbf{200+ records monthly}}
+            \resumeItem{Shipped an automated Instagram posting pipeline that publishes an adoptable dog twice daily, driving follower engagement; \textbf{500+ posts} delivered to date at \textbf{100\% uptime}}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
 
