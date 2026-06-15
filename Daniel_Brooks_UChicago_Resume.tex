@@ -14,7 +14,7 @@
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{verbatim}
 \usepackage{enumitem}
-\usepackage[hidelinks]{hyperref}
+\usepackage{hyperref}
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
@@ -29,6 +29,8 @@
 \definecolor{light-grey}{gray}{0.83}
 \definecolor{dark-grey}{gray}{0.3}
 \definecolor{text-grey}{gray}{.08}
+\definecolor{linkblue}{rgb}{0.039,0.40,0.76}
+\hypersetup{colorlinks=true, urlcolor=linkblue, linkcolor=linkblue, citecolor=linkblue}
 
 \DeclareRobustCommand{\ebseries}{\fontseries{eb}\selectfont}
 \DeclareTextFontCommand{\texteb}{\ebseries}
@@ -147,7 +149,7 @@
     \resumeSubHeadingListStart
 
       \resumeProjectHeading
-          {\textbf{Peeky} $|$ \small{Rust, ONNX Runtime, PipeWire, Claude API} $|$ \href{https://getpeeky.ai}{\myuline{getpeeky.ai}} $|$ \href{https://github.com/danielbusnz-lgtm/peeky}{\myuline{GitHub}}}{}
+          {\textbf{Peeky} $|$ \small{Rust, ONNX, cpal, Claude API} $|$ \href{https://getpeeky.ai}{\myuline{getpeeky.ai}} $|$ \href{https://github.com/danielbusnz-lgtm/Peeky}{\myuline{GitHub}}}{}
           \resumeItemListStart
             \resumeItem{Built and shipped Peeky, a voice-controlled AI assistant for macOS now serving \textbf{10 active users}, delivering \textbf{sub-2-second latency} from spoken command to on-screen action}
             \resumeItem{Cut command latency to \textbf{as low as 1.2s} by training a small on-device classifier that matches the Claude API at \textbf{92\% accuracy}, routing locally to skip a \textbf{$\sim$1s} cloud HTTP call; backed by an eval harness and \textbf{50 tests} in CI}
