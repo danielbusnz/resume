@@ -152,8 +152,8 @@
       \resumeProjectHeading
           {\textbf{Timemachine} $|$ \small{Go, REST API, Wayback Machine, LLM synthesis} $|$ \href{https://github.com/danielbusnz-lgtm/timemachine}{\myuline{GitHub}}}{}
           \resumeItemListStart
-            \resumeItem{Built a research API in \textbf{Go} that answers a question as of a past date and keeps anything published after that date out of the answer}
-            \resumeItem{Pulls the requested URLs from the Wayback Machine as they looked on that date, has an LLM write one answer, and caches it permanently since the past never changes; shipped v1 with CI}
+            \resumeItem{Built a research API in \textbf{Go} that answers any question as of a past date, removing the lookahead bias that invalidates historical LLM evaluations (the same data-leakage problem Hindsight measures, solved at the data layer)}
+            \resumeItem{Enforces a hard cutoff at query time (drops any document newer than the as-of date), pulls sources from the Wayback Machine as they looked then, synthesizes one LLM answer, and caches immutably; shipped v1 with CI}
           \resumeItemListEnd
 
     \resumeSubHeadingListEnd
@@ -164,7 +164,7 @@
 
     \resumeSubheading
       {Cape Property Pros}{June 2025 -- Present}
-      {Software Engineer}{Dennis, MA}
+      {Software Engineer (sole developer)}{Dennis, MA}
       \resumeItemListStart
         \resumeItem{Saved $\sim$\textbf{10 hours/week} of manual data entry by deploying a Python GPT-based extraction pipeline that processes $\sim$\textbf{250 invoices/month}, pulling structured fields at \textbf{95\% accuracy}, validating them against a Pydantic schema, and syncing them into QuickBooks Online}
         \resumeItem{Unified data from the Gmail and QuickBooks Online APIs into a single PostgreSQL store via async batch ETL, removing siloed manual lookups across sources}
