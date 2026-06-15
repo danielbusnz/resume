@@ -149,8 +149,8 @@
       \resumeProjectHeading
           {\textbf{Peeky} $|$ \small{Rust, ONNX Runtime, PipeWire, Claude API} $|$ \href{https://getpeeky.ai}{\myuline{getpeeky.ai}} $|$ \href{https://github.com/danielbusnz-lgtm/peeky}{\myuline{GitHub}}}{}
           \resumeItemListStart
-            \resumeItem{Built and shipped a cross-platform voice-controlled AI desktop assistant in Rust, now serving \textbf{10 active users}: hold-to-talk capture, speech-to-intent routing across \textbf{five command paths}, and on-screen action execution}
-            \resumeItem{Cut per-command latency and cost by routing through an on-device ONNX classifier that calls a cloud LLM only below a confidence threshold; backed by an eval harness (pass rate + confusion matrix), \textbf{98 tests}, and code-coverage CI}
+            \resumeItem{Built and shipped Peeky, a voice-controlled AI assistant for macOS now serving \textbf{10 active users}, delivering \textbf{sub-2-second latency} from spoken command to on-screen action}
+            \resumeItem{Cut command latency to \textbf{as low as 1.2s} by training a small on-device classifier that matches the Claude API at \textbf{92\% accuracy}, routing locally to skip a \textbf{$\sim$1s} cloud HTTP call; backed by an eval harness and \textbf{50 tests} in CI}
           \resumeItemListEnd
 
     \resumeSubHeadingListEnd
