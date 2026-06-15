@@ -155,6 +155,20 @@
             \resumeItem{Cut command latency to \textbf{as low as 1.2s} by training a small on-device classifier that matches the Claude API at \textbf{92\% accuracy}, routing locally to skip a \textbf{$\sim$1s} cloud HTTP call; backed by an eval harness and \textbf{50 tests} in CI}
           \resumeItemListEnd
 
+      \resumeProjectHeading
+          {\textbf{hindsight} $|$ \small{Python, pandas, OpenAI API, Claude API} $|$ \href{https://github.com/danielbusnz-lgtm/hindsight}{\myuline{GitHub}}}{}
+          \resumeItemListStart
+            \resumeItem{Built a test harness that grades LLM forecasters only on data from after their training cutoff, so real skill can be told apart from the model just remembering what already happened}
+            \resumeItem{Wrote the stats layer (walk-forward backtests, bootstrapped confidence intervals, permutation tests) and used it to show \textbf{gpt-4o-mini has no real trading edge}}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{timemachine} $|$ \small{Go, REST API, Wayback Machine, LLM synthesis} $|$ \href{https://github.com/danielbusnz-lgtm/timemachine}{\myuline{GitHub}}}{}
+          \resumeItemListStart
+            \resumeItem{Built a research API in \textbf{Go} that answers a question as of a past date and keeps anything published after that date out of the answer}
+            \resumeItem{Pulls the requested URLs from the Wayback Machine as they looked on that date, has an LLM write one answer, and caches it permanently since the past never changes; shipped v1 with CI}
+          \resumeItemListEnd
+
     \resumeSubHeadingListEnd
 
 %-----------OPEN SOURCE-----------
