@@ -147,23 +147,10 @@
     \resumeSubHeadingListStart
 
       \resumeProjectHeading
-          {\textbf{routelet} $|$ \small{Python, SetFit, ONNX, scikit-learn, DVC} $|$ \href{https://github.com/danielbusnz-lgtm/routelet}{\myuline{GitHub}}}{}
-          \resumeItemListStart
-            \resumeItem{Fine-tuned a small intent classifier (SetFit + calibrated head) that matches a Claude LLM baseline within \textbf{1\%} (92\% vs 93.5\%) while running on-device, replacing a \textbf{$\sim$1s-per-call} API with millisecond inference}
-            \resumeItem{Built the eval harness and data pipeline behind it: frozen-holdout benchmarking against the LLM, confidence-gated out-of-distribution handling, DVC-versioned data, and int8 ONNX export}
-          \resumeItemListEnd
-
-      \resumeProjectHeading
           {\textbf{Peeky} $|$ \small{Rust, ONNX Runtime, PipeWire, Claude API} $|$ \href{https://getpeeky.ai}{\myuline{getpeeky.ai}} $|$ \href{https://github.com/danielbusnz-lgtm/peeky}{\myuline{GitHub}}}{}
           \resumeItemListStart
             \resumeItem{Built and shipped a cross-platform voice-controlled AI desktop assistant in Rust, now serving \textbf{10 active users}: hold-to-talk capture, speech-to-intent routing across \textbf{five command paths}, and on-screen action execution}
             \resumeItem{Cut per-command latency and cost by routing through an on-device ONNX classifier that calls a cloud LLM only below a confidence threshold; backed by an eval harness (pass rate + confusion matrix), \textbf{98 tests}, and code-coverage CI}
-          \resumeItemListEnd
-
-      \resumeProjectHeading
-          {\textbf{HiveNet} $|$ \small{TypeScript, Next.js, FastAPI, Postgres, WebSockets} $|$ \href{https://hivenet.si9num.com}{\myuline{Live Demo}} $|$ \href{https://github.com/danielbusnz-lgtm/HiveNet}{\myuline{GitHub}}}{}
-          \resumeItemListStart
-            \resumeItem{Built and shipped a full-stack social network (Next.js, FastAPI, Postgres) with JWT auth, a posts/comments/follows social graph, and a \textbf{live-updating WebSocket feed}; containerized with Docker Compose and gated by CI on both tiers}
           \resumeItemListEnd
 
     \resumeSubHeadingListEnd
