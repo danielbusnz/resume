@@ -73,7 +73,7 @@
 \titleformat {\section}{
     \bfseries \vspace{2pt} \raggedright \large
 }{}{0em}{}[\color{light-grey} {\titlerule[2pt]} \vspace{-4pt}]
-\titlespacing*{\section}{0pt}{10pt}{5pt}
+\titlespacing*{\section}{0pt}{7pt}{4pt}
 
 %-------------------------
 % Custom commands
@@ -140,6 +140,7 @@
           \resumeItemListStart
             \resumeItem{Built and shipped Peeky, a cross-platform voice-controlled AI assistant now serving \textbf{10 active users}, delivering \textbf{sub-2-second latency} from spoken command to on-screen action}
             \resumeItem{Cut command latency to \textbf{as low as 1.2s} by training a small on-device classifier that matches the Claude API at \textbf{92\% accuracy}, routing locally to skip a \textbf{$\sim$1s} cloud HTTP call; backed by an eval harness and \textbf{50 tests} in CI}
+            \resumeItem{Interviewed a user to pinpoint onboarding friction, then reworked the first-run flow to make setup faster and simpler}
           \resumeItemListEnd
 
       \resumeProjectHeading
@@ -188,7 +189,7 @@
  \begin{itemize}[leftmargin=0in, label={}]
     \small{\item{
      \textbf{Languages}{: Python, Go, Rust, TypeScript, SQL}\vspace{2pt} \\
-     \textbf{AI/ML}{: eval harnesses, fine-tuning (SetFit), ONNX / on-device inference, embeddings, Claude API, OpenAI API}\vspace{2pt} \\
+     \textbf{AI/ML}{: eval harnesses, fine-tuning (SetFit), ONNX / on-device inference, Claude API, OpenAI API, Claude Code}\vspace{2pt} \\
      \textbf{Data}{: pandas, NumPy, scikit-learn}\vspace{2pt} \\
      \textbf{Backend \& Infra}{: FastAPI, REST APIs, PostgreSQL, asyncio, Docker, CI/CD}
     }}
